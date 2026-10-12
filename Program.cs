@@ -44,9 +44,7 @@ try
         }
 
         int pontszam = 0;
-        bool pontszamParseSikeres = int.TryParse(adatok[2], out pontszam);
-
-        if (!pontszamParseSikeres)
+        if (!int.TryParse(adatok[2], out pontszam))
         {
             hibasSorokSzama++;
             continue;
